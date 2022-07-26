@@ -1,0 +1,56 @@
+1- CREAR UNA APLICACION
+https://discord.com/developers/applications
+-loguearse con nuestro nombre de usuario y contraseña Discord
+-seleccionar nueva aplicacion
+-nombre de la aplicacion
+
+2- DESCRIPCION GENERAL DEL BOT
+-imagen
+-nombre del Bot 
+-descripcion general de lo que hace nuestro bot
+
+3-BOT
+
+
+
+3-OAuth2
+- URL Generatos
+-le damos los alcances permitidos a nuestro bot, 
+aplication.commands (permite que los usuarios interacuten con el bot)
+bot (lo habilitamos)
+adminitrador (para darle todo tipo de pemisos)
+-nos copiamos el url generado 
+
+4- URL
+-esta url la ponemos en el navegador
+-agregamos al bot al canal que deseemos, tien eque ser un canal de nuestra autoria
+
+5-VISUAL STUDIO CODE
+-npm init --yes (crea package.json)
+-npm i discord.js
+-npm i nodedemon -D (instalar como dependencia de desarrollo)
+
+archivo index.js
+archivo .env (guardaremos el token generado)
+
+-npm i dotenv (requerir los archivos de .env)
+-npm install @discordjs/builders @discordjs/rest discord-api-types (se utiliza para registrar o actualizar los comandos que le pasemos al bot)
+
+npx nodemon index.js (corre el bot, es npx porque es dependecia)
+
+crear carpeta "service" con un "config.js" dentro
+
+6-clientID, guildID
+clientId es el id desde la pagina de discord donde creamos el bot
+guildId es el id del servidor creados
+-ambos los guardamos en el archivo .env
+-requerimos los arhivos del .env en el index
+
+-creamos archivo deploy-commands.js
+-lo configuramos para que acepte los comandos barra
+-corremos node deploy-commands.js (solo lo hacemos cada vez que modificamos su estructura)
+
+
+https://www.canva.com/design/DAFC38NsG1w/655lCIIv0Gl7BFkdpBw7QA/view?utm_content=DAFC38NsG1w&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel#1
+
+
